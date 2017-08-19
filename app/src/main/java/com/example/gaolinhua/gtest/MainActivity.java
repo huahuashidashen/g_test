@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "onCreate: ");
         Log.e(TAG, "onCreate: develop");
         age = 10;
+        Log.e(TAG, "onCreate: this id develop_one " );
     }
 }
