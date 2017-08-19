@@ -6,7 +6,9 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getName();
+
     int age = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.e(TAG, "onCreate: ");
         Log.e(TAG, "onCreate: develop");
-        age = 12;
+        age = 10;
     }
 }
