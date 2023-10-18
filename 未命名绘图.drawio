@@ -1,9 +1,118 @@
-<mxfile host="app.diagrams.net" modified="2023-05-19T02:36:00.348Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="4qof_qdW3BfLHc7wgR0V" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-18T10:03:45.908Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="X5BQqaLcT6WKtAm1z9Z6" version="21.6.8" type="github">
   <diagram name="第 1 页" id="n86Yw1GHjSsyL03GGA4L">
-    <mxGraphModel dx="1188" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1809" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="240" width="400" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="500" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-2" value="goods/enter接口成功收到事件：ExtEnterAction.ExtEnterResSuccess" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKLJ05I7sfN_SSx-v3gt-3" target="lKLJ05I7sfN_SSx-v3gt-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKLJ05I7sfN_SSx-v3gt-3" target="lKLJ05I7sfN_SSx-v3gt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-19" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lKLJ05I7sfN_SSx-v3gt-18">
+          <mxGeometry x="-0.35" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-3" value="是否满足动态化条件&lt;br&gt;（手百App、动态化开关）" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="380" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-4" value="使用线上渲染，不触发动态化逻辑" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="505" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-6" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="468" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKLJ05I7sfN_SSx-v3gt-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-8" value="组装数据，发起动态化Api请求&lt;br&gt;&quot;%s/cloud/basics/c/v1/get_style_data?&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-9" value="处理server数据&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、modify：保存内存中，执行render时候，根据id合并，完成最终json渲染&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、replaceAll结构：更新内存、sp缓存&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="355" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-11" value="直播插件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="208" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-20" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-21" value="1、进入直播间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-20">
+          <mxGeometry x="15" width="135" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-23" value="渲染SDK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="765" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lKLJ05I7sfN_SSx-v3gt-24" target="lKLJ05I7sfN_SSx-v3gt-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="500" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-29" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-30" value="2、View初始化" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-29">
+          <mxGeometry x="20" y="5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-34" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="940" width="500" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-39" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="940" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-35" value="4、View事件交互" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-39">
+          <mxGeometry x="15" y="5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-40" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="770" width="500" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-40">
+          <mxGeometry width="500" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-32" value="" style="swimlane;startSize=0;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-40">
+          <mxGeometry width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-33" value="3、View数据绑定" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-40">
+          <mxGeometry x="30" y="5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-45" value="数据展示&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1、调用onBindData(originJson)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="lKLJ05I7sfN_SSx-v3gt-40">
+          <mxGeometry x="200" y="30" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-41" value="init方法&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、ViewParamsConfig初始化场景&amp;amp;模板id&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、调用渲染&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;renderComponentView&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、获取渲染成功根&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;componentView&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="640" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="620" width="400" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-43" value="view渲染&amp;amp;事件绑定&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、渲染：解析json文件，根据type添加容器、子view&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、事件：根据json文件配置click字段，对view进行点击事件绑定&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="627.5" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="770" width="400" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-47" value="数据展示&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、onBindData事件分发到所有子view&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、子view设置可见性、根据链式结构读取json内容展示&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="777.5" width="280" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lKLJ05I7sfN_SSx-v3gt-31" target="lKLJ05I7sfN_SSx-v3gt-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lKLJ05I7sfN_SSx-v3gt-49" value="事件处理&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1、监听listener，根据指令action处理对应事件，&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;去购买、查看讲解等；&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2、json文件给子view配置action即可&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="940" width="280" height="110" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
